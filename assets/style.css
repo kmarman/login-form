@@ -1,0 +1,117 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	box-sizing:border-box;
+}
+main{
+	width: 100vw;
+	height: 100vh;
+	/* background: linear-gradient(to top right, #4cdbeb, #7cdfbd); */
+	background:url(image/bg.jpg) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.glass{
+	height: 80vh;
+	width: 60vw;
+	background:linear-gradient(to right bottom, rgba(255,255,255, 0.5), rgba(255, 255, 255, 0.1)) ;
+	border-radius: 2rem;
+	backdrop-filter: blur(.5rem);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 11;
+}
+.circle1, 
+.circle2{
+	background:linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255,255,255, 0.1));
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+}
+.circle1{
+	position: absolute;
+  	top: 4%;
+   	left: 17%;
+}
+.circle2{
+	position:absolute;
+	bottom: 4%; 
+	right: 17%;
+}
+
+/* -------------- Form Start here ------------- */
+.form{
+	width: 375px;
+	height: 475px;
+	background: rgba(0,0,0, 0.2);
+	border-radius: 1.3rem;
+	position: relative;
+}
+.logo{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    top: -7%;
+    left: calc(50% - 50px);
+}
+.logo img{
+	max-width: 100%;
+	border-radius: 50%;
+}
+.form-input{
+	padding: 5rem 2rem 0 1.5rem;
+}
+input{
+	width: 100%;
+	margin-top: .3rem;
+	margin-bottom: 1.2rem;
+	outline: none;
+	border: 1px solid transparent;
+	padding: 0.8rem 1.3rem;
+	font-size: 0.9rem;
+	color:#fff;
+	background: rgba(255,255,255, 0.5);
+	border-radius: 2rem;
+}
+input:focus{
+	box-shadow: 0 0 10px #777;
+}
+label{
+	color: #222;
+	font-weight: normal;
+	font-size: 17px;
+	margin-left: 1rem;
+	padding-bottom: .9rem;
+}
+::placeholder{
+	color:#444;
+	font-size: 1rem;
+}
+.btn{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1.5rem;
+}
+[type="reset"],
+[type="submit"]{
+	width: 48%;
+	color: #000 !important;
+	font-weight: normal;
+	font-size: 1.2rem;
+	padding: .7rem 1.5rem;
+	transition:  0.25s;
+}
+[type="submit"]:hover{
+	background-color: #16C79A;
+	color:#fff !important;
+}
+[type="reset"]:hover{
+	background-color: #fb2525;
+	color:#fff !important;
+}
